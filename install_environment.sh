@@ -15,6 +15,9 @@ info "Updating apt modules..."
 apt update && apt upgrade
 success "Finished updating!"
 
+#Installing Xclip
+. ${scripts_path}/xclip.sh
+
 #Installing NodeJS
 . ${scripts_path}/node.sh
 
