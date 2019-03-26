@@ -27,6 +27,9 @@ success "Finished updating!"
 #Installing Webstorm
 . ${scripts_path}/webstorm.sh
 
+#Installing Google Chrome
+. ${scripts_path}/google_chrome.sh
+
 
 success "Done!"
 
