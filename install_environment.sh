@@ -15,6 +15,9 @@ info "Updating apt modules..."
 apt update && apt upgrade
 success "Finished updating!"
 
+#Installing ZSH
+. ${scripts_path}/zsh.sh
+
 #Installing Xclip
 . ${scripts_path}/xclip.sh
 
@@ -29,7 +32,6 @@ success "Finished updating!"
 
 #Installing Google Chrome
 . ${scripts_path}/google_chrome.sh
-
 
 success "Done!"
 
