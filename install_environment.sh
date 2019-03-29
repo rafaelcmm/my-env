@@ -39,5 +39,8 @@ success "Finished updating!"
 #Installing Postman
 . ${scripts_path}/postman.sh
 
+#Installing Python
+. ${scripts_path}/python.sh
+
 success "Done!"
 
