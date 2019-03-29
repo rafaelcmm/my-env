@@ -24,6 +24,9 @@ success "Finished updating!"
 #Installing NodeJS
 . ${scripts_path}/node.sh
 
+#Installing Yarn
+. ${scripts_path}/yarn.sh
+
 #Installing Git
 . ${scripts_path}/git.sh
 
@@ -44,6 +47,9 @@ success "Finished updating!"
 
 #Installing Slack
 . ${scripts_path}/slack.sh
+
+#Installing Telegram
+. ${scripts_path}/telegram.sh
 
 success "Done!"
 
