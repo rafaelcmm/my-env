@@ -33,5 +33,8 @@ success "Finished updating!"
 #Installing Google Chrome
 . ${scripts_path}/google_chrome.sh
 
+#Installing Android Studio
+. ${scripts_path}/android_studio.sh
+
 success "Done!"
 
