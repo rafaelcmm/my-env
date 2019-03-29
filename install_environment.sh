@@ -13,7 +13,9 @@ info "Welcome to Rafael Carvalho's environment configuration! We will proceed wi
 #Reseting source.list to default
 info "Restoring source.list to default version..."
 
-curl https://repogen.simplylinux.ch/txt/bionic/sources_364081abe58544839754b84ff2adfaaf6a19bc9a.txt | sudo tee /etc/apt/sources.list
+curl https://repogen.simplylinux.ch/txt/bionic/sources_91d1f0e36604d1962022ebcdfe73b8af78897a8f.txt | sudo tee /etc/apt/sources.list
+curl https://repogen.simplylinux.ch/txt/bionic/gpg_91d1f0e36604d1962022ebcdfe73b8af78897a8f.txt | sudo tee /etc/apt/gpg_keys.txt
+
 rm /etc/apt/sources.list.d/*
 
 success "Success restoring source.list!"
@@ -30,6 +32,9 @@ success "Finished updating!"
 
 #Installing Xclip
 . ${scripts_path}/xclip.sh
+
+#Installing CURL
+. ${scripts_path}/curl.sh
 
 #Installing NodeJS
 . ${scripts_path}/node.sh
