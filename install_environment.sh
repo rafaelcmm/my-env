@@ -42,5 +42,8 @@ success "Finished updating!"
 #Installing Python
 . ${scripts_path}/python.sh
 
+#Installing Slack
+. ${scripts_path}/slack.sh
+
 success "Done!"
 
