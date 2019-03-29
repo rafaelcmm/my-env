@@ -10,9 +10,19 @@ chmod -R +x ${functions_path}
 
 info "Welcome to Rafael Carvalho's environment configuration! We will proceed with the instalations."
 
+#Reseting source.list to default
+info "Restoring source.list to default version..."
+
+curl https://repogen.simplylinux.ch/txt/bionic/sources_364081abe58544839754b84ff2adfaaf6a19bc9a.txt | sudo tee /etc/apt/sources.list
+rm /etc/apt/sources.list.d/*
+
+success "Success restoring source.list!"
+
 #Updating apt modules
 info "Updating apt modules..."
-apt update && apt upgrade
+
+apt update && apt upgrade -y
+
 success "Finished updating!"
 
 #Installing ZSH

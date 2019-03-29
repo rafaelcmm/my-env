@@ -7,6 +7,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 info 'Installing yarn...'
 
+apt update
 apt install -y yarn
 yarn_version=$(yarn -v)
 
