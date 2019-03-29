@@ -36,5 +36,8 @@ success "Finished updating!"
 #Installing Android Studio
 . ${scripts_path}/android_studio.sh
 
+#Installing Postman
+. ${scripts_path}/postman.sh
+
 success "Done!"
 
