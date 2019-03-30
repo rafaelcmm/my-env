@@ -10,16 +10,6 @@ chmod -R +x ${functions_path}
 
 info "Welcome to Rafael Carvalho's environment configuration! We will proceed with the instalations."
 
-#Reseting source.list to default
-info "Restoring source.list to default version..."
-
-curl https://repogen.simplylinux.ch/txt/bionic/sources_91d1f0e36604d1962022ebcdfe73b8af78897a8f.txt | sudo tee /etc/apt/sources.list
-curl https://repogen.simplylinux.ch/txt/bionic/gpg_91d1f0e36604d1962022ebcdfe73b8af78897a8f.txt | sudo tee /etc/apt/gpg_keys.txt
-
-rm /etc/apt/sources.list.d/*
-
-success "Success restoring source.list!"
-
 #Updating apt modules
 info "Updating apt modules..."
 
@@ -65,6 +55,9 @@ success "Finished updating!"
 
 #Installing Telegram
 . ${scripts_path}/telegram.sh
+
+#Installing React, React Native and Angular
+. ${scripts_path}/main_js_frameworks.sh
 
 success "Done!"
 
